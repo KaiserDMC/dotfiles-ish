@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>cww</Title>
+            <Shortcut>cww</Shortcut>
+            <Description>Code snippet for Console.Write</Description>
+            <Author>Whoever you want it to be</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="false">
+                    <ID>SystemConsole</ID>
+                    <Function>SimpleTypeName(global::System.Console)</Function>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[$SystemConsole$.Write()]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
