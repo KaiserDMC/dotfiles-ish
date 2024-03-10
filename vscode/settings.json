@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Catppuccin Mocha",
   "editor.fontFamily": "BlexMono Nerd Font, Consolas, 'Courier New', monospace",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -13,7 +12,8 @@
   "[go]": {
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
+    "editor.bracketPairColorization.enabled": true
   },
   "launch": {
     "configurations": [
@@ -29,5 +29,9 @@
       }
     ],
     "compounds": []
-  }
+  },
+  "redhat.telemetry.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.CustomBrowser": "chrome"
 }
