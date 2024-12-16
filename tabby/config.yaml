@@ -12,28 +12,6 @@ profiles:
     id: ssh:custom:LSA-VM-1:a6701984-bb4b-4f46-add9-a201c3b3e7dc
     icon: fab fa-linux
     color: '#ffd500'
-    terminalColorScheme:
-      name: FirefoxDev
-      foreground: '#7c8fa4'
-      background: '#0e1011'
-      cursor: '#708284'
-      colors:
-        - '#002831'
-        - '#e63853'
-        - '#5eb83c'
-        - '#a57706'
-        - '#359ddf'
-        - '#d75cff'
-        - '#4b73a2'
-        - '#dcdcdc'
-        - '#001e27'
-        - '#e1003f'
-        - '#1d9000'
-        - '#cd9409'
-        - '#006fc0'
-        - '#a200da'
-        - '#005794'
-        - '#e2e2e2'
 hotkeys:
   toggle-window:
     - Ctrl-Space
@@ -201,29 +179,28 @@ hotkeys:
 terminal:
   searchOptions: {}
   colorScheme:
-    name: Argonaut
-    foreground: '#fffaf4'
-    background: '#0e1019'
-    cursor: '#ff0018'
+    name: base2tone-drawbridge-dark
+    foreground: '#9094a7'
+    background: '#1b1f32'
+    cursor: '#289dbd'
     colors:
-      - '#232323'
-      - '#ff000f'
-      - '#8ce10b'
-      - '#ffb900'
-      - '#008df8'
-      - '#6d43a6'
-      - '#00d8eb'
-      - '#ffffff'
-      - '#444444'
-      - '#ff2740'
-      - '#abe15b'
-      - '#ffd242'
-      - '#0092ff'
-      - '#9a5feb'
-      - '#67fff0'
-      - '#ffffff'
+      - '#1b1f32'
+      - '#627af4'
+      - '#67c9e4'
+      - '#99e9ff'
+      - '#7289fd'
+      - '#67c9e4'
+      - '#8b9efd'
+      - '#9094a7'
+      - '#51587b'
+      - '#75d5f0'
+      - '#252a41'
+      - '#444b6f'
+      - '#5e6587'
+      - '#c3cdfe'
+      - '#5cbcd6'
+      - '#e1e6ff'
   customColorSchemes: []
-  background: colorScheme
   lightColorScheme:
     name: Tabby Default Light
     foreground: '#4d4d4c'
@@ -246,6 +223,11 @@ terminal:
       - '#8959a8'
       - '#3e999f'
       - '#ffffff'
+  background: colorScheme
+  font: BlexMono Nerd Font ExtraLight
+  copyAsHTML: false
+  showTabProfileIcon: true
+  hideTabIndex: true
 ssh:
   knownHosts:
     - host: 192.168.0.110
@@ -268,12 +250,14 @@ configSync:
 clickableLinks: {}
 appearance:
   theme: Standard (legacy)
-  vibrancy: true
-hacks: {}
+  tabsInFullscreen: true
+hacks:
+  disableVibrancyWhileDragging: true
 enableWelcomeTab: false
 pluginBlacklist: []
 profileDefaults: {}
-accessibility: {}
+accessibility:
+  animations: false
 providerBlacklist: []
 commandBlacklist: []
 groups: []
