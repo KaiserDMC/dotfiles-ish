@@ -255,9 +255,10 @@ shell
 			item(title='Calculator' image=\ue1e7 cmd='calc.exe')
 			item(title=@str.res('regedit.exe,-16') image cmd='regedit.exe')
 			item(title='Notepad++' image cmd='C:\Program Files\Notepad++\notepad++.exe')
-			item(title='WinSCP' image cmd='C:\Users\Souta\AppData\Local\Programs\WinSCP\WinSCP.exe' dir)
-			item(title='Visual Studio 2022' image=[\uE272, #c994f7] cmd='devenv.exe')
+			item(title='FileZilla' image cmd='C:\Program Files\FileZilla FTP Client\filezilla.exe' dir)
+			item(title='JetBrains Toolbox' image cmd='C:\Users\SOUTA\AppData\Local\JetBrains\Toolbox\bin\jetbrains-toolbox.exe')
 			item(title='Visual Studio Code' image=[\uE272, #22A7F2] cmd='code.exe' args='"@sel.path"')
+			// image=[\uE272, #c994f7]
 		}
 		
 		menu(mode=multiple title='Goto' separator=both image=\uE14A)

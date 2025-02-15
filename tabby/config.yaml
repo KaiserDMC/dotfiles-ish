@@ -176,6 +176,7 @@ hotkeys:
     - Ctrl-Shift-P
   reconnect-tab: []
   disconnect-tab: []
+  group-selectors: {}
 terminal:
   searchOptions: {}
   colorScheme:
@@ -224,7 +225,7 @@ terminal:
       - '#3e999f'
       - '#ffffff'
   background: colorScheme
-  font: BlexMono Nerd Font ExtraLight
+  font: BlexMono Nerd Font SemiBold
   copyAsHTML: false
   showTabProfileIcon: true
   hideTabIndex: true

@@ -1,0 +1,23 @@
+[Unit]
+Description=NadekoBot service
+After=network.target
+StartLimitIntervalSec=60
+StartLimitBurst=2
+
+[Service]
+Type=simple
+User=kaiser
+WorkingDirectory=/home/kaiser/nadekobot/output
+# If you want Nadeko to be compiled prior to every startup, uncomment the lines
+# below. Note  that it's not neccessary unless you are personally modifying the
+# source code.
+#ExecStartPre=/usr/bin/dotnet build ../src/NadekoBot/NadekoBot.csproj -c Release -o output/
+ExecStart=/usr/bin/dotnet NadekoBot.dll
+Restart=on-failure
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=NadekoBot
+
+[Install]
+WantedBy=multi-user.target
