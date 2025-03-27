@@ -1,4 +1,12 @@
 {
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/kaiserdmc/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path-linux": "/home/kaiserdmc/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-linux": "/home/kaiserdmc/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vscode-kubernetes.helm-path-windows": "C:\\Users\\SOUTA\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+    "vscode-kubernetes.minikube-path-windows": "C:\\Users\\SOUTA\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
+  },
+  "typescript.tsserver.watchOptions": {},
   "editor.fontFamily": "BlexMono Nerd Font, Consolas, 'Courier New', monospace",
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -33,5 +41,33 @@
   "redhat.telemetry.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
-  "liveServer.settings.CustomBrowser": "chrome"
+  "liveServer.settings.CustomBrowser": "chrome",
+  "workbench.colorTheme": "Dracula Theme",
+  "makefile.configureOnOpen": true,
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "MSYS2": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": ["--login", "-i"],
+      "env": {
+        "MSYSTEM": "MINGW32",
+        "CHERE_INVOKING": "1"
+      }
+    }
+  }
 }
