@@ -12,6 +12,98 @@ profiles:
     id: ssh:custom:LSA-VM-1:a6701984-bb4b-4f46-add9-a201c3b3e7dc
     icon: fab fa-linux
     color: '#ffd500'
+    disableDynamicTitle: true
+    terminalColorScheme:
+      name: UnderTheSea
+      foreground: '#ffffff'
+      background: '#011116'
+      cursor: '#4afcd6'
+      colors:
+        - '#022026'
+        - '#b2302d'
+        - '#00a941'
+        - '#59819c'
+        - '#459a86'
+        - '#00599d'
+        - '#5d7e19'
+        - '#405555'
+        - '#384451'
+        - '#ff4242'
+        - '#2aea5e'
+        - '#8ed4fd'
+        - '#61d5ba'
+        - '#1298ff'
+        - '#98d028'
+        - '#58fbd6'
+  - type: ssh
+    name: 'RackNerd Testing '
+    options:
+      host: 104.168.35.120
+      algorithms: {}
+      input: {}
+      auth: password
+      user: krifod
+    weight: -1
+    icon: fab fa-linux
+    color: '#a45ee9'
+    terminalColorScheme:
+      name: Gruvbox Dark
+      foreground: '#e6d4a3'
+      background: '#1e1e1e'
+      cursor: '#bbbbbb'
+      colors:
+        - '#161819'
+        - '#f73028'
+        - '#aab01e'
+        - '#f7b125'
+        - '#719586'
+        - '#c77089'
+        - '#7db669'
+        - '#faefbb'
+        - '#7f7061'
+        - '#be0f17'
+        - '#868715'
+        - '#cc881a'
+        - '#377375'
+        - '#a04b73'
+        - '#578e57'
+        - '#e6d4a3'
+    id: ssh:custom:RackNerd-Testing:c029427b-b56d-4a04-9f01-3254e3b1c8d4
+    disableDynamicTitle: true
+  - type: ssh
+    name: RackNerd Testing (root)
+    options:
+      host: 104.168.35.120
+      algorithms: {}
+      input: {}
+      auth: password
+    weight: -1
+    icon: fab fa-linux
+    color: '#a45ee9'
+    terminalColorScheme:
+      name: AtelierSulphurpool
+      foreground: '#979db4'
+      background: '#202746'
+      cursor: '#979db4'
+      colors:
+        - '#202746'
+        - '#c94922'
+        - '#ac9739'
+        - '#c08b30'
+        - '#3d8fd1'
+        - '#6679cc'
+        - '#22a2c9'
+        - '#979db4'
+        - '#6b7394'
+        - '#c76b29'
+        - '#293256'
+        - '#5e6687'
+        - '#898ea4'
+        - '#dfe2f1'
+        - '#9c637a'
+        - '#f5f7ff'
+    id: ssh:custom:RackNerd-Testing:4cb158c0-ec36-4cab-931a-0f0523192ef5
+    disableDynamicTitle: true
 hotkeys:
   toggle-window:
     - Ctrl-Space
@@ -177,6 +269,10 @@ hotkeys:
   reconnect-tab: []
   disconnect-tab: []
   group-selectors: {}
+  scroll-page-up:
+    - Alt-PageUp
+  scroll-page-down:
+    - Alt-PageDown
 terminal:
   searchOptions: {}
   colorScheme:
@@ -225,7 +321,7 @@ terminal:
       - '#3e999f'
       - '#ffffff'
   background: colorScheme
-  font: BlexMono Nerd Font SemiBold
+  font: EnvyCodeR Nerd Font
   copyAsHTML: false
   showTabProfileIcon: true
   hideTabIndex: true
@@ -243,6 +339,14 @@ ssh:
       port: 22
       type: ecdsa-sha2-nistp256
       digest: PjMboBgq/FLz0/uiJBYhoKKAX+5SyM5xnuynGRaFiOo=
+    - host: 104.168.35.120
+      port: 22
+      type: ssh-rsa
+      digest: G9A3sWonCzPwjkaLGnXRrS0sXbI8YJo3n5ruFwn03qY=
+    - host: 104.168.35.120
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: ubKcvWn77zAH8YtkdjUZJxTrICi6TbWtHYgvcsLAR5c=
 configSync:
   parts: {}
   token: >-
